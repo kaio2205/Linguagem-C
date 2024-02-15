@@ -178,3 +178,22 @@ int main(){
     return 0;
 }
 ```
+### Ano-bissexto.c
+```c
+#include <stdio.h>
+int main(){
+ int  num;
+ printf("digite o ano e veja se ele é bissexto\n");
+ scanf ("%d",&num);
+ 
+if(num%4==0) {
+    printf("Este ano é bissexto\n");
+} 
+else{
+    printf("Este ano nao é bissexto\n");
+}
+return 0;
+}
+```
+
+
