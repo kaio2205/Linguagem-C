@@ -304,4 +304,53 @@ return 0;
    return 0;
  }
 ```
+### coleçao 1
+```c
+// array é um conjunto de dados sobre um determinado 
+// assunto. Podemos falar de valores numericos, textos
+// datas, ou objetos 
 
+
+
+
+
+#include<stdio.h>
+int main(){
+int valores[5]= {10,5,8,12,7}; 
+printf ("%d\n", valores[0]);
+return 0;
+}
+```
+
+### base expoente
+
+```c
+#include<stdio.h>
+int main(){
+int base,xp, i ,b ;
+printf("digite um numero para a base\n");
+scanf("%d",&base);
+printf("digite um numero para a expoente\n");
+scanf("%d",&xp);
+b = base;
+
+for (i =1 ;i < xp ; i++ ){
+    //*base *= b;
+    base = base * b;
+    
+}
+printf("%d\n",base);
+return 0;
+}
+```
+### for 1
+```c
+#include<stdio.h>
+int main() {
+int x;
+for(x= 1; x <= 10 ; x++){
+printf("%d\n" ,x);  
+}
+return 0;
+}
+```
