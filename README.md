@@ -283,7 +283,7 @@ return 0;
    
 }
 ```
-#### coleçoes iguais
+### coleçoes iguais
 ```c
 #include <stdio.h>
  
