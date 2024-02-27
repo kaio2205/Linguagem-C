@@ -372,9 +372,47 @@ int main()
    
     return 0;
 }
-
-        
 ```
+### Arquivo.c
+```c
+#include <stdio.h>
 
+int main() {
+    FILE *arquivo;
+    char texto [100];
+
+    //abre o arquivo para escrita 
+    arquivo  = fopen("exemplo.txt","w");
+    if (arquivo == NULL){
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+    //Escreve no arquivo 
+    fprintf(arquivo,"Olá, este é um exemplo de manipulaçao em C.");
+    
+    // Fecha o arquivo 
+    fclose(arquivo);
+
+    // abre o arquivo para a leitura 
+    arquivo = fopen("exemplo.txt", "r");
+
+    if (arquivo == NULL){
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+
+    }
+    
+    // Le o conteudo do arquivo e imprime  na tela 
+    fgets( texto ,100, arquivo);
+    printf("Conteudo do arquivo %s\n",texto);
+
+    //Fecha o arquivo 
+
+    fclose(arquivo);
+
+    return 0; 
+    
+}
+```
 
 
